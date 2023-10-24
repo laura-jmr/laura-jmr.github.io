@@ -10,24 +10,20 @@ export default function Landing() {
         <div className="page-landing-title-container-column-1">
           <div className="page-landing-title-container-row-1"></div>
           <div className="page-landing-title-container-row-2">
-            <div id='page-landing-title-name'>
-              <h1 id="page-landing-title-name-J">
-                <span className='page-landing-title-name-letter first'>J</span>
-                <span className='page-landing-title-name-letter-hide'>ü</span>
-                <span className='page-landing-title-name-letter-hide'>r</span>
-                <span className='page-landing-title-name-letter-hide'>g</span>
-                <span className='page-landing-title-name-letter-hide'>e</span>
-                <span className='page-landing-title-name-letter-hide'>n</span>
-                <span className='page-landing-title-name-letter-hide'>s</span>
-              </h1>
-              <h1 id="page-landing-title-name-M">
-                <span className='page-landing-title-name-letter page-landing-title-name-letter-right'>m</span>
-                <span className='page-landing-title-name-letter-hide page-landing-title-name-letter-right'>e</span>
-                <span className='page-landing-title-name-letter-hide page-landing-title-name-letter-right'>i</span>
-                <span className='page-landing-title-name-letter-hide page-landing-title-name-letter-right'>e</span>
-                <span className='page-landing-title-name-letter page-landing-title-name-letter-right'>r</span>
-              </h1>
-            </div>
+            <h1 id="page-landing-title-name">
+              <span className='page-landing-title-name-letter first'>J</span>
+              <span className='page-landing-title-name-letter-hide'>ü</span>
+              <span className='page-landing-title-name-letter-hide'>r</span>
+              <span className='page-landing-title-name-letter-hide'>g</span>
+              <span className='page-landing-title-name-letter-hide'>e</span>
+              <span className='page-landing-title-name-letter-hide'>n</span>
+              <span className='page-landing-title-name-letter-hide'>s</span>
+              <span className='page-landing-title-name-letter'>m</span>
+              <span className='page-landing-title-name-letter-hide'>e</span>
+              <span className='page-landing-title-name-letter-hide'>i</span>
+              <span className='page-landing-title-name-letter-hide'>e</span>
+              <span className='page-landing-title-name-letter'>r</span>
+            </h1>
           </div>
           <div className="page-landing-title-container-row-1"></div>
         </div>
@@ -42,7 +38,7 @@ export default function Landing() {
             </h1>
           </div>
           <div className="page-landing-title-container-row-2">
-            <img id="page-landing-image" src="/images/shigeki-wakabayashi-6nuz52vsbWc-unsplash.jpg" alt="shigeki wakabayashi japan at night" />
+            <img id="page-landing-image" src="/images/shigeki-wakabayashi-6nuz52vsbWc-unsplash.jpg" alt="shigeki wakabayashi japan at night"/>
           </div>
           <div className="page-landing-title-container-row-1"></div>
         </div>
