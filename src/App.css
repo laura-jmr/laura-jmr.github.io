@@ -1,7 +1,12 @@
 body {
     overflow-x: hidden;
+
 }
 
 * {
     color: rgb(207, 148, 22);
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
 }
