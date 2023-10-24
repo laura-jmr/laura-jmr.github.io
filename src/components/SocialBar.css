@@ -1,0 +1,15 @@
+#socialbar-container {
+    width: 100vw;
+    height: fit-content;
+    position: absolute;
+    bottom: 20px;
+}
+
+#socialbar-list {
+    display: flex;
+    justify-content: center;
+}
+
+#socialbar-list li {
+    width: 50px;
+}

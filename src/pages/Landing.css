@@ -1,0 +1,14 @@
+#page-container-landing {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(16, 21, 7);
+}
+
+#page-landing-image {
+    height: 50vh;
+    width: 50vw;
+    object-fit: cover;
+    position: absolute;
+    top: 25%;
+    left: 25%;
+}

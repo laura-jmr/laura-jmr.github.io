@@ -1,1 +1,1 @@
-# portfolio_2.0
+# Portfolio of Laura Jürgensmeier :D
