@@ -1,10 +1,15 @@
 body {
     overflow-x: hidden;
-
+    position: relative;
+    color: rgb(207, 148, 22);
 }
 
-* {
+a {
     color: rgb(207, 148, 22);
+}
+
+
+* {
     margin: 0;
     padding: 0;
     border: 0;

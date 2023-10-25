@@ -1,0 +1,10 @@
+.test {
+    position: absolute;
+    top: 25vh;
+    left: 25vw;
+    width: 50vw;
+    height: 50vh;
+    object-fit: cover;
+    filter: blur(0);
+    border-radius: 0;
+}

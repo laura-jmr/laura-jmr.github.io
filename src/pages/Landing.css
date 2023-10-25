@@ -145,3 +145,11 @@
     opacity: 1;
     transform: scaleY(1);
 }
+
+#page-landing-title-container-description {
+    font-size: 1.2rem;
+    position: absolute;
+    top: -35px;
+    left: -25vw;
+    text-align: justify;
+}

@@ -2,10 +2,13 @@ import React from 'react'
 import "./Landing.css"
 import Menu from '../components/Menu'
 import SocialBar from '../components/SocialBar'
+import Cursor from '../components/Cursor'
+import Goo from 'gooey-react'
 
 export default function Landing() {
   return (
     <div id="page-landing-container">
+
       <div id="page-landing-title-container-table">
         <div className="page-landing-title-container-column-1">
           <div className="page-landing-title-container-row-1"></div>
@@ -38,16 +41,25 @@ export default function Landing() {
             </h1>
           </div>
           <div className="page-landing-title-container-row-2">
-            <img id="page-landing-image" src="/images/shigeki-wakabayashi-6nuz52vsbWc-unsplash.jpg" alt="shigeki wakabayashi japan at night"/>
+            <img id="page-landing-image" src="/images/shigeki-wakabayashi-6nuz52vsbWc-unsplash.jpg" alt="shigeki wakabayashi japan at night" />
           </div>
-          <div className="page-landing-title-container-row-1"></div>
+          <div className="page-landing-title-container-row-1">
+          </div>
         </div>
         <div className="page-landing-title-container-column-1">
           <div className="page-landing-title-container-row-1"></div>
           <div className="page-landing-title-container-row-2"></div>
-          <div className="page-landing-title-container-row-1"></div>
+          <div className="page-landing-title-container-row-1">
+          <p id='page-landing-title-container-description'>
+              Applied Computer Science Student @ HTW Berkin<br />
+              Presently Computer Science Master in Berlin<br />
+              Future full stack dev // web designer
+            </p>
+          </div>
         </div>
       </div>
+      <SocialBar />
+      <Menu />
     </div>
   )
 }
