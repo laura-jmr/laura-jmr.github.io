@@ -50,7 +50,7 @@ export default function Landing() {
           <div className="page-landing-title-container-row-1"></div>
           <div className="page-landing-title-container-row-2"></div>
           <div className="page-landing-title-container-row-1">
-          <p id='page-landing-title-container-description'>
+            <p id='page-landing-title-container-description'>
               Applied Computer Science Student @ HTW Berlin<br />
               Presently Computer Science Master in Berlin<br />
               Future full stack dev // web designer

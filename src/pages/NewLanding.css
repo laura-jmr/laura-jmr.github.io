@@ -3,93 +3,87 @@
     height: 100vh;
     background-color: var(--color-background);
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#page-landing-title-container-table {
-    font-size: 2rem;
-    position: absolute;
+#page-landing-content-container {
+    font-size: 4rem;
+    font-weight: bold;
+    position: relative;
     height: 70vh;
     width: 70vw;
     z-index: 888;
-    top: 15vh;
-    left: 15vw;
-    display: flex;
     color: var(--color-secondary);
-}
-
-.page-landing-title-container-column-1 {
-    position: relative;
-    height: 100%;
-    width: 15%;
-}
-
-.page-landing-title-container-column-2 {
-    position: relative;
-    height: 100%;
-    width: 70%;
-}
-
-.page-landing-title-container-row-1 {
-    position: relative;
-    width: 100%;
-    height: 15%;
-}
-
-.page-landing-title-container-row-2 {
-    position: relative;
-    width: 100%;
-    height: 70%;
-}
-
-#page-landing-image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-}
-
-#page-landing-title-surname {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    overflow: hidden;
     display: flex;
 }
 
-#page-landing-title-surname span {
+#page-landing-name {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+    width: 15%;
+    margin-top: 11%;
+    word-break: break-all;
+    line-height: .9;
+    transition-property: transform;
+    transition-duration: .15s;
+}
+
+#page-landing-content-inner-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 100%;
+}
+
+#page-landing-surname {
+    height: 15%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.page-landing-surname-letter {
     width: 20%;
 }
 
-.page-landing-title-surname-left {
+.left {
     text-align: start;
 }
 
-.page-landing-title-surname-right {
+.right {
     text-align: end;
 }
 
-.page-landing-title-surname-center {
+.center {
     text-align: center;
 }
 
-#page-landing-title-name {
+
+#page-landing-description {
     position: absolute;
+    bottom: 10%;
     right: 0;
-    word-break: break-all;
-    width: 50%;
-    line-height: .9;
-    text-align: end;
-    transition-property: transform;
-    transition-duration: .15s;
-    display: flex;
-    flex-direction: column;
-    z-index: 777;
+    font-weight: normal;
+    font-size: 1.3rem;
 }
+
+#page-landing-image {
+    max-height: 70%;
+    overflow: hidden;
+    object-fit: cover;
+}
+
 
 .page-landing-title-name-letter {
     display: inline;
 }
 
 
-.page-landing-title-name-letter.first:after {
+.page-landing-title-name-letter:after {
     font-weight: 200;
     font-size: 20px;
     margin-left: 10px;
@@ -141,52 +135,61 @@
 }
 
 
-#page-landing-title-name:hover .page-landing-title-name-letter-hide{
+#page-landing-name:hover .page-landing-title-name-letter-hide{
     max-height: 200px;
     transform: scaleY(1);
 }
 
-#page-landing-title-container-description {
-    font-size: 1.2rem;
-    position: absolute;
-    top: -35px;
-    left: -25vw;
-    text-align: justify;
-}
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-    #page-landing-title-container-table {
+
+    html, body {
+        overflow-x: hidden;
+    }
+    
+    body {
+        position: relative;
+        width: 100%;
+    }
+
+    #page-landing-container {
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    #page-landing-name {
+        position: absolute;
+        top: 11%;
+        left: 20px;
+        z-index: 888;
+        text-align: start;
+    }
+
+    #page-landing-surname {
+        margin-left: 20px;
+    }
+
+    #page-landing-content-container {
         width: 100vw;
-        height: 100vh;
-        left: 0;
-        top: 0;
+        height: 80vh;
+    }
+
+    #page-landing-content-inner-container {
+        width: 80%;
+        position: relative;
+    }
+
+    #page-landing-description {
+        position: absolute;
+        right: 0;
+        width: 50%;
     }
 
     #page-landing-image {
-        position: absolute;
-        width: 70vw;
-        left: 0;
-        top: 15vh;
-    }
-
-    #page-landing-title-container-description {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
-
-    .page-landing-title-container-row-2 {
-        position: absolute;
-    }
-    .page-landing-title-container-row-1 {
-        position: absolute;
-    }
-    .page-landing-title-container-column-2 {
-        position: absolute;
-    }
-    .page-landing-title-container-column-1 {
-        position: absolute;
+        max-height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position:  -120px -120px;
     }
 }
 

@@ -44,17 +44,17 @@ export default function SocialBar() {
         <div className={`socialbar-container ${isFixed ? 'fixed' : ''}`}>
             <ul id="socialbar-list">
                 <li>
-                    <a href='https://github.com/laura-jmr' target="_blank" rel="noopener noreferrer"><i class="fa fa-github fa-2x" aria-hidden="true"></i></a>
+                    <a href='https://github.com/laura-jmr' target="_blank" rel="noopener noreferrer"><i className="fa fa-github fa-2x" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                    <a href='https://www.instagram.com/la_loraaa/' target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+                    <a href='https://www.instagram.com/la_loraaa/' target="_blank" rel="noopener noreferrer"><i className="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
                 </li>
                 <li>
-                    <a href='https://www.linkedin.com/in/laura-jürgensmeier-b3245a26a/' target="_blank" rel="noopener noreferrer"><i class="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                    <a href='https://www.linkedin.com/in/laura-jürgensmeier-b3245a26a/' target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin fa-2x" aria-hidden="true"></i></a>
                 </li>
                 <li id='socialbar-list--item-email'>
-                    <p onClick={showEmail} id="socialbar-email"><i class="fa fa-envelope-open-o fa-2x" aria-hidden="true"></i></p>
-                    <span className={`${isShowEmail ? 'show-email' : 'hide-email'}`}><span id="email">laura.juergensmeier@gmail.com</span> <span onClick={copyEmail}>  <i class="fa fa-copy" aria-hidden="true" id="copy-email"></i></span></span>
+                    <p onClick={showEmail} id="socialbar-email"><i className="fa fa-envelope-open-o fa-2x" aria-hidden="true"></i></p>
+                    <span className={`${isShowEmail ? 'show-email' : 'hide-email'}`}><span id="email">laura.juergensmeier@gmail.com</span> <span onClick={copyEmail}>  <i className="fa fa-copy" aria-hidden="true" id="copy-email"></i></span></span>
                 </li>
             </ul>
         </div>

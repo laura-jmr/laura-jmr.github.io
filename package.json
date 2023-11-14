@@ -1,7 +1,7 @@
 {
-  "name": "portfolio_2.0",
+  "name": "laura-jmr.github.io",
   "version": "0.1.0",
-  "homepage": "https://laura-jmr.github.io/portfolio_2.0",
+  "homepage": "https://laura-jmr.github.io",
   "private": true,
   "dependencies": {
     "@fortawesome/free-brands-svg-icons": "^6.4.2",

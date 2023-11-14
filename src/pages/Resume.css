@@ -29,7 +29,7 @@
 #resume-timeline-container-column-1 {
     width: 15%;
     height: 100%;
-    text-align: end;
+    text-align: flex-end;
 }
 #resume-timeline-date-list {
     list-style: none;
@@ -48,15 +48,15 @@
 
 #resume-timeline-date-list li:nth-of-type(3) {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
 }
 
 #resume-timeline-date-list li:nth-of-type(4),
 #resume-timeline-date-list li:nth-of-type(5) {
     display: flex;
-    justify-content: end;
-    align-items: end;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 #resume-timeline-container-column-2 {
@@ -107,5 +107,5 @@
 
 #resume-timeline-entry-list li:nth-of-type(4),
 #resume-timeline-entry-list li:nth-of-type(5) {
-    align-items: end;
+    align-items: flex-end;
 }

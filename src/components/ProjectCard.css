@@ -1,0 +1,111 @@
+#project-card-overview-container {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+#projects-overview-primary-image {
+    height: 70vh;
+    width: 70vh;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+#projects-overview-primary-title {
+    position: absolute;
+    left: 50vh;
+    top: 25%;
+    height: 50%;
+    text-align: start;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 3rem;
+}
+
+#projects-overview-year {
+    height: fit-content;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-style: italic;
+    color: var(--color-secondary);
+}
+
+#projects-overview-desc-container {
+    position: absolute;
+    right: 0;
+    width: 20vw;
+    bottom: 20px;
+    text-align: justify;
+}
+
+#projects-overview-expand-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#projects-overview-expand-container {
+    position: absolute;
+    color: var(--color-secondary);
+    width: 100px;
+    height: 100px;
+    z-index: 888;
+}
+
+#projects-overview-expand-container i {
+    margin: 20px;
+}
+
+#projects-overview-expanded-container {
+    margin-top: 70px;
+    border: 1px solid var(--color-secondary);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    #project-card-overview-container {
+        overflow: visible;
+    }
+
+    #projects-overview-primary-image {
+        width: 100%;
+        object-position: -200px 0;
+    }
+
+    #projects-overview-primary-title {
+        width: 200px;
+        text-align: end;
+        top: 20%;
+        right: -59px;
+        left: auto;
+        font-size: 2rem;
+        height: fit-content;
+    }
+
+    #projects-overview-year {
+        right: -59px;
+        left: auto;
+    }
+
+    #projects-overview-desc-container {
+        right: -59px;
+        left: auto;
+        top: 50vh;
+        width: 200px;
+    }
+
+    #projects-overview-expand-container {
+        display: none;
+    }
+
+    #projects-overview-expanded-container {
+        margin-top: 40px;
+    }
+}

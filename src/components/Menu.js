@@ -16,7 +16,7 @@ export default function Menu() {
                     <Link className="link-hover" to="projects">Projekte & Skills</Link>
                 </li>
                 <li id="menu-list-item-tr" onClick={toggleLanguage}>
-                    <span style={{ fontWeight: isGerman ? 'bold' : 'normal' }}>DE</span> // <span style={{ fontWeight: isGerman ? 'normal' : 'bold' }}>EN</span>
+                    <span style={{ fontWeight: isGerman ? 'bold' : 'normal' }}>DE</span> \\ <span style={{ fontWeight: isGerman ? 'normal' : 'bold' }}>EN</span>
                 </li>
                 <li id="menu-list-item-bl">
                     <a className="link-hover" href='/'>Resume</a>

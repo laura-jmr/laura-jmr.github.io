@@ -46,3 +46,18 @@
 #menu-list {
     list-style: none;
 }
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #menu-list-item-tl, #menu-list-item-bl, #menu-list-item-br{
+        display: none;
+    }
+
+    #menu-container {
+        z-index: 999;
+    }
+
+    #menu-list-item-tr {
+        right: 20px;
+    }
+}
