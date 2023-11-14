@@ -1,14 +1,15 @@
-import Landing from './pages/Landing'
-import Skills from './pages/Skills';
-import Footer from './pages/Footer';
+import { Routes, Route } from "react-router-dom"
+import Home from "./pages/Home";
+import Projects from "./pages/Projects"
 import "./App.css"
 
 function App() {
   return (
     <>
-      <Landing/>
-      <Skills/>
-      <Footer/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="projects" element={<Projects />} />
+      </Routes>
     </>
   );
 }

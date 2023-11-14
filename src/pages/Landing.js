@@ -41,7 +41,7 @@ export default function Landing() {
             </h1>
           </div>
           <div className="page-landing-title-container-row-2">
-            <img id="page-landing-image" src="/images/shigeki-wakabayashi-6nuz52vsbWc-unsplash.jpg" alt="shigeki wakabayashi japan at night" />
+            <img id="page-landing-image" src="/images/IMG_3733.jpeg" alt="shigeki wakabayashi japan at night" />
           </div>
           <div className="page-landing-title-container-row-1">
           </div>
@@ -51,7 +51,7 @@ export default function Landing() {
           <div className="page-landing-title-container-row-2"></div>
           <div className="page-landing-title-container-row-1">
           <p id='page-landing-title-container-description'>
-              Applied Computer Science Student @ HTW Berkin<br />
+              Applied Computer Science Student @ HTW Berlin<br />
               Presently Computer Science Master in Berlin<br />
               Future full stack dev // web designer
             </p>

@@ -1,0 +1,82 @@
+#projects-container {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--color-background);
+    position: relative;
+}
+
+#projects-overview-container {
+    width: 70vw;
+    height: 70vh;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    display: flex;
+    overflow: hidden;
+}
+
+#projects-overview-primary-image {
+    height: 100%;
+    width: 70vh;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+#projects-overview-primary-title {
+    position: absolute;
+    left: 50vh;
+    top: 25%;
+    height: 50%;
+    text-align: start;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 3rem;
+}
+
+#projects-overview-year {
+    height: fit-content;
+    position: absolute;
+    right: 0;
+    font-style: italic;
+}
+
+#projects-overview-desc-container {
+    position: absolute;
+    right: 0;
+    width: 20vw;
+    bottom: 0;
+    text-align: justify;
+
+}
+
+#projects-overview-expand-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#projects-socialbar {
+    position: absolute;
+    top: 100px;
+    z-index: 0;
+}
+
+#projects-overview-expand-circle {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    border: 2px solid white;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#projects-overview-expand-circle p {
+    font-size: 0.8rem;
+    text-align: center;
+    color: var(--color-secondary);
+}

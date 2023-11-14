@@ -2,8 +2,8 @@
     width: 100vw;
     height: 20vh;
     position: absolute;
-    bottom: 0;
-    background-color: rgba(255, 255, 255, 0.1);
+    bottom: -20vh;
+    background-color: rgb(21, 21, 22);
 }
 
 .table {
@@ -13,7 +13,7 @@
     top: 15%;
     left: 15%;
     display: flex;
-    color: white;
+    color: var(--color-secondary);
 }
 
 .f-table-column-1 {
