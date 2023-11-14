@@ -31,7 +31,7 @@ export default function ContactForm() {
   return (
     <div id="contact-form-container">
       <form onSubmit={handleSubmit}>
-        <div>
+        <div id='contact-form-name-container'>
           <input
             type="text"
             id="name"
@@ -40,7 +40,7 @@ export default function ContactForm() {
             onChange={handleChange}
           />
         </div>
-        <div>
+        <div id='contact-form-email-container'>
           <input
             type="email"
             id="email"
@@ -49,7 +49,7 @@ export default function ContactForm() {
             onChange={handleChange}
           />
         </div>
-        <div>
+        <div id='contact-form-message-container'>
           <input
             type="text"
             id="text"
@@ -58,7 +58,7 @@ export default function ContactForm() {
             onChange={handleChange}
           />
         </div>
-        <button type="submit">Send</button>
+        <button id="contact-form-submit-button" type="submit">Send</button>
       </form>
     </div>
   );

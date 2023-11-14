@@ -1,0 +1,27 @@
+#contact-page-container {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--color-background);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contact-container {
+    position: absolute;
+    width: 70vw;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#contact-container h2 {
+    font-size: 2.5rem;
+}
+
+.underline {
+    text-decoration: underline;
+}
