@@ -5,13 +5,15 @@ import Skills from './Skills';
 import Resume from './Resume';
 import Contact from './Contact';
 import Footer from './Footer';
+import NewSkills from './NewSkills';
 
 export default function Home() {
     return (
         <>
             {/* <Landing /> */}
             <NewLanding/>
-            <Skills />
+            {/* <Skills /> */}
+            <NewSkills />
             <Resume />
             <Contact />
             <Footer />

@@ -25,6 +25,7 @@
 
 .hide-email {
     display: none;
+    position: relative;
 }
 
 .show-email {
@@ -65,5 +66,22 @@
     #socialbar-list {
         justify-content: flex-start;
         padding-left: 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) { 
+    #socialbar-list {
+        font-size: 1.6rem;
+    }
+
+    #socialbar-list li {
+        width: 80px;
+    }
+
+    .show-email {
+        position: absolute;
+        bottom: 80px;
+        right: 100px;
     }
 }

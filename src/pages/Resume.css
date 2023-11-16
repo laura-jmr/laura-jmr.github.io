@@ -3,6 +3,9 @@
     height: 100vh;
     position: relative;
     background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #resume-timeline-line {
@@ -14,9 +17,7 @@
 #resume-timeline-container-upper {
     width: 70vw;
     height: 70vh;
-    position: absolute;
-    top: 15vh;
-    left: 15vh;
+    background-color: red;
 }
 
 #resume-timeline-container {
@@ -24,6 +25,7 @@
     height: 100%;
     width: 100%;
     display: flex;
+    
 }
 
 #resume-timeline-container-column-1 {
@@ -108,4 +110,9 @@
 #resume-timeline-entry-list li:nth-of-type(4),
 #resume-timeline-entry-list li:nth-of-type(5) {
     align-items: flex-end;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
 }
