@@ -4,8 +4,12 @@ import Menu from '../components/Menu'
 import SocialBar from '../components/SocialBar'
 import Cursor from '../components/Cursor'
 import Goo from 'gooey-react'
+import { useTranslation } from 'react-i18next';
+
 
 export default function NewLanding() {
+    const { t } = useTranslation();
+    
     return (
         <div id="page-landing-container">
             <div id="page-landing-content-container">
@@ -34,13 +38,14 @@ export default function NewLanding() {
                     <img id="page-landing-image" src="/images/IMG_3733.jpeg" alt="shigeki wakabayashi japan at night" />
                 </div>
                 <p id='page-landing-description'>
-                    Applied Computer Science Student @ HTW Berlin<br />
-                    Presently Computer Science Master in Berlin<br />
-                    Future full stack dev // web designer
+                    {t('landing_about1')}<br />
+                    {t('landing_about2')}<br />
+                    {t('landing_about3')}
                 </p>
             </div>
             <SocialBar />
             <Menu />
+
         </div>
     )
 }

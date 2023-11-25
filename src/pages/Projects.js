@@ -5,14 +5,24 @@ import "./Projects.css"
 import SocialBar from "../components/SocialBar"
 import ProjectCard from '../components/ProjectCard';
 import Footer from './Footer'
+import { useTranslation } from 'react-i18next';
+import ScrollToTop from '../components/ScrollToTop';
 
 export default function Projects() {
 
+    const { t } = useTranslation();
     const [isGerman, setIsGerman] = useState(true);
     const [isExpanded, setIsExpanded] = useState(false);
+    const { i18n } = useTranslation();
 
     const toggleLanguage = () => {
-        setIsGerman((prev) => !prev);
+        setIsGerman((prevIsGerman) => !prevIsGerman);
+
+        if (!isGerman) {
+            i18n.changeLanguage('de');
+        } else {
+            i18n.changeLanguage('en');
+        }
     };
 
     var scrollPos = window.scrollY;
@@ -40,6 +50,7 @@ export default function Projects() {
 
     return (
         <div id="projects-container">
+            <ScrollToTop />
             <div id="menu-container">
                 <ul id="menu-list">
                     <li id="menu-list-item-tl">
@@ -55,17 +66,17 @@ export default function Projects() {
             </div>
             <div id='projects-overview-container'>
                 <ProjectCard
-                    title="Bachelor Thesis"
+                    title={t('project_card_title1')}
                     year="/23 \\ /24"
-                    description="In my bachelor thesis I evaluate selected methods to measure accessibility on websites and improve selected tool features in a browser extension. Make the internet more accessible. For all."
-                    expandedText={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."}
+                    description={t('project_card_description1')}
+                    expandedText={t('project_card_expandedText1')}
                     imgURL={"/images/emile-perron-xrVDYZRGdw4-unsplash.jpg"}
                 />
                 <ProjectCard
-                    title="Portfolio Website"
+                    title={t('project_card_title2')}
                     year="/23"
-                    description="During some off-time I started to work on a new portfolio website, which you are currently on. I wanted to showcase myself in a professional way and display my experience. I designed everything myself while coding my website as a React Webapplication, deployed on GitHub."
-                    expandedText={"Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet."}
+                    description={t('project_card_description2')}
+                    expandedText={t('project_card_expandedText2')}
                     imgURL={"/images/lautaro-andreani-UYsBCu9RP3Y-unsplash.jpg"}
                 />
 

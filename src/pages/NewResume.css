@@ -1,0 +1,46 @@
+#page-resume-container {
+    width: 100vw;
+    height: fit-content;
+    position: relative;
+    background-color: var(--color-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#resume-inner-container {
+    width: 70vw;
+    height: fit-content;
+    position: relative;
+}
+
+#resume-inner-container h2 {
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.resume-entry-container {
+    margin-bottom: 50px;
+    position: relative;
+    padding: 4px;
+}
+
+.resume-entry-container h3 {
+    margin-bottom: 15px;
+}
+
+.resume-entry-description {
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.resume-entry-container:first-of-type {
+    border: 1px solid var(--color-secondary);
+}
+
+#resume-currently-tag {
+    color: var(--color-secondary);
+    position: absolute;
+    right: 0;
+    top: -22px;
+}

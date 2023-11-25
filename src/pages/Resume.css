@@ -1,6 +1,6 @@
 #page-resume-container {
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     position: relative;
     background-color: var(--color-background);
     display: flex;
@@ -16,7 +16,7 @@
 
 #resume-timeline-container-upper {
     width: 70vw;
-    height: 70vh;
+    height: fit-content;
     background-color: red;
 }
 

@@ -1,6 +1,7 @@
 import { Routes, Route } from "react-router-dom"
 import Home from "./pages/Home";
-import Projects from "./pages/Projects"
+import Projects from "./pages/Projects";
+import Imprint from "./pages/Imprint";
 import "./App.css"
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="projects" element={<Projects />} />
+        <Route path="imprint" element={<Imprint />} />
       </Routes>
     </>
   );

@@ -1,19 +1,22 @@
 import React from 'react'
 import "./NewSkills.css"
 import { Link } from "react-router-dom";
+import { useTranslation } from 'react-i18next';
 
 export default function NewSkills() {
+    const { t } = useTranslation();
+
     return (
         <div id="page-skills-container">
             <div id="skills-inner-container">
-                <h1>Proficiencies</h1>
+                <h1>{t('skills_header')}</h1>
                 <div id="skills-section-container">
                     <div className='skills-section'>
                         <h2>\ Backend</h2>
                         <div>
                             <p>
-                                Software Web Developement<br />
-                                Components and Databases<br />
+                                {t('skills_backend_description1')}<br />
+                                {t('skills_backend_description2')}<br />
                                 Python // SQL // MongoDB
                             </p>
                         </div>
@@ -22,7 +25,7 @@ export default function NewSkills() {
                         <h2>\ Frontend</h2>
                         <div>
                             <p>
-                                Visual Web Developement<br />
+                                {t('skills_frontend_description1')}<br />
                                 HTML + CSS + JS<br />
                                 React, Node
                             </p>
@@ -32,14 +35,14 @@ export default function NewSkills() {
                         <h2>\ Design</h2>
                         <div>
                             <p>
-                                Web design in several own projects<br />
-                                creative person<br />
-                                self taught out of passion
+                                {t('skills_design_description1')}<br />
+                                {t('skills_design_description2')}<br />
+                                {t('skills_design_description3')}
                             </p>
                         </div>
                     </div>
                 </div>
-                <Link id="button-projects" to="projects">Look at Projects</Link>
+                <Link id="button-projects" to="projects">{t('skills_button_projekte')}</Link>
             </div>
         </div>
     )
