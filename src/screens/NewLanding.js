@@ -1,9 +1,5 @@
 import React from 'react'
 import "./NewLanding.css"
-import Menu from '../components/Menu'
-import SocialBar from '../components/SocialBar'
-import Cursor from '../components/Cursor'
-import Goo from 'gooey-react'
 import { useTranslation } from 'react-i18next';
 
 
@@ -43,9 +39,6 @@ export default function NewLanding() {
                     {t('landing_about3')}
                 </p>
             </div>
-            <SocialBar />
-            <Menu />
-
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom";
-import Menu from '../components/Menu'
+import NewMenu from "../screens/NewMenu"
 import "./Projects.css"
 import SocialBar from "../components/SocialBar"
 import ProjectCard from '../components/ProjectCard';
@@ -51,19 +51,7 @@ export default function Projects() {
     return (
         <div id="projects-container">
             <ScrollToTop />
-            <div id="menu-container">
-                <ul id="menu-list">
-                    <li id="menu-list-item-tl">
-                        <Link className="link-hover" to="/">Back</Link>
-                    </li>
-                    <li id="menu-list-item-tr" onClick={toggleLanguage}>
-                        <span style={{ fontWeight: isGerman ? 'bold' : 'normal' }}>DE</span> // <span style={{ fontWeight: isGerman ? 'normal' : 'bold' }}>EN</span>
-                    </li>
-                </ul>
-            </div>
-            <div id="projects-socialbar">
-                <SocialBar />
-            </div>
+            <NewMenu isSubpage={true}/>
             <div id='projects-overview-container'>
                 <ProjectCard
                     title={t('project_card_title1')}

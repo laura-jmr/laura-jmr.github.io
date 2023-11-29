@@ -1,0 +1,32 @@
+#page-privacy-polity-container {
+    background-color: var(--color-background);
+    width: 100vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#privacy-polity-container {
+    width: 70vw;
+    margin-top: 15vh;
+    text-align: justify;
+}
+
+#privacy-polity-container h1 {
+    margin-bottom: 60px;
+}
+
+#privacy-polity-container h2 {
+    color: var(--color-secondary);
+    margin-bottom: 30px;
+}
+
+#privacy-polity-container p {
+    margin-bottom: 15px;
+}
+
+#privacy-polity-container ul {
+    margin-bottom: 15px;
+    margin-left: 30px;
+}

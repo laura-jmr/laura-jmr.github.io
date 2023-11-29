@@ -1,0 +1,22 @@
+#page-imprint-container {
+    background-color: var(--color-background);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#imprint-container {
+    width: 70vw;
+    height: 70vh;
+    position: relative;
+}
+
+#imprint-container h1 {
+    margin-bottom: 60px;
+}
+
+#imprint-inner-container h3 {
+    margin-top: 30px;
+}

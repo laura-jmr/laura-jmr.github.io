@@ -19,6 +19,7 @@ export default function Footer() {
                 </div>
                 <div className='f-table-column-1'>
                     <Link to="imprint">{t('footer_info3')}</Link>
+                    <Link to="privacy-policy">{t('footer_info4')}</Link>
                 </div>
             </div>
         </div>

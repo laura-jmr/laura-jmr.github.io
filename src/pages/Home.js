@@ -1,8 +1,9 @@
 import React from 'react'
 import Landing from './Landing'
-import NewLanding from './NewLanding'
+import NewLanding from '../screens/NewLanding'
 import Skills from './Skills';
 import Resume from './Resume';
+import NewMenu from '../screens/NewMenu'
 import Contact from './Contact';
 import Footer from './Footer';
 import NewSkills from './NewSkills';
@@ -16,6 +17,7 @@ export default function Home() {
         <>
             <I18nextProvider i18n={i18n}>
                 <ScrollToTop />
+                <NewMenu isSubpage={false}/>
                 {/* <Landing /> */}
                 <NewLanding />
                 {/* <Skills /> */}
