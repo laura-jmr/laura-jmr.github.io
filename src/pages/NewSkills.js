@@ -7,7 +7,7 @@ export default function NewSkills() {
     const { t } = useTranslation();
 
     return (
-        <div id="page-skills-container">
+        <div id="page-skills-container" >
             <div id="skills-inner-container">
                 <h1>{t('skills_header')}</h1>
                 <div id="skills-section-container">

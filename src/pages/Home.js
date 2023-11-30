@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Landing from './Landing'
 import NewLanding from '../screens/NewLanding'
 import Skills from './Skills';
@@ -13,17 +13,34 @@ import i18n from "../components/i18n"
 import ScrollToTop from '../components/ScrollToTop';
 
 export default function Home() {
+    const resumeRef = useRef(null);
+    const skillsRef = useRef(null);
+
+    const scrollToRef = (refName) => {
+        console.log("ref")
+        const ref = {
+            resumeRef,
+            skillsRef
+        }[refName];
+        console.log(refName)
+        console.log(ref.current)
+
+        if (ref && ref.current) {
+            ref.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            console.log("scrolling")
+        }
+    };
     return (
         <>
             <I18nextProvider i18n={i18n}>
                 <ScrollToTop />
-                <NewMenu isSubpage={false}/>
+                <NewMenu isSubpage={false} scrollToRef={scrollToRef}/>
                 {/* <Landing /> */}
                 <NewLanding />
                 {/* <Skills /> */}
-                <NewSkills />
+                <NewSkills ref={skillsRef}/>
                 {/* <Resume /> */}
-                <NewResume />
+                <NewResume ref={resumeRef}/>
                 <Contact />
                 <Footer />
             </I18nextProvider>

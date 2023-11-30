@@ -1,0 +1,59 @@
+.socialbar-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    position: absolute;
+    left: calc(50vw - 150px);
+    top: 94vh;
+    z-index: 999;
+    width: fit-content;
+}
+
+.socialbar-list li {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fixed {
+    position: fixed !important;
+    top: 32px !important;
+    bottom: auto !important;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .socialbar-container {
+        position: fixed;
+        top: 0px;
+        bottom: auto;
+        z-index: 998;
+        background-color: rgb(6, 6, 6);
+        height: 80px;
+        padding-top: 32px;
+    }
+
+    #socialbar-list {
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) { 
+    #socialbar-list {
+        font-size: 1.6rem;
+    }
+
+    #socialbar-list li {
+        width: 80px;
+    }
+
+    .show-email {
+        position: absolute;
+        bottom: 80px;
+        right: 100px;
+    }
+}
